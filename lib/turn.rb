@@ -3,10 +3,10 @@ def valid_move?(board, index)
 end
 
 def position_taken?(board, index)
-  if(board[index]=="X" || board[index]=="O")
-    return true
+  if(board[index]!=" " || board[index]!="" || board[index]!=null)
+    return false
   end
-  return false
+  return true
 end
 
 def position_on_board?(index)
